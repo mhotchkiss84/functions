@@ -99,16 +99,20 @@ sandwichMaker("Wheat", "Tuna", true);
 
 // The Rock's Hobbies
 // Copy and paste the following object into your JavaScript file:
-// var dwayneObject = {
-//   firstName: "Dwayne",
-//   nickName: "The Rock",
-//   lastName: "Johnson",
-//   favoriteFood: "Eggs",
-//   hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building muscle mass"]
-// }
+var dwayneObject = {
+  firstName: "Dwayne",
+  nickName: "The Rock",
+  lastName: "Johnson",
+  favoriteFood: "Eggs",
+  hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building muscle mass"]
+}
 
-// function printHobbies(){
-// // YOUR CODE GOES HERE
-// }
+function printHobbies(){
+    for(i = 0; i !== dwayneObject.hobbies.length; i++){
+        console.log(dwayneObject.hobbies[i]);
+    }
+}
 // The printHobbies function should loop through the array of Dwayne The Rock Johnson's hobbies and print each one to the console.
 // Call the printHobbies function.
+printHobbies();
+
