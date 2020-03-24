@@ -87,4 +87,28 @@ languageGreeting("Mike", "spanish");
 // Call the function three times, passing in three different sets of parameters.
 // Example console output:
 // "You ordered a toasted meatball sub sandwich on wheat."
+function sandwichMaker(breadType, sandwichName, isToasted){
+    if(isToasted === true){
+        console.log(`Toasted ${sandwichName} on ${breadType}`);
+    } else {
+        console.log(`${sandwichName} on ${breadType}`);
+    }
+}
+sandwichMaker("Wheat", "Tuna", true);
 
+
+// The Rock's Hobbies
+// Copy and paste the following object into your JavaScript file:
+// var dwayneObject = {
+//   firstName: "Dwayne",
+//   nickName: "The Rock",
+//   lastName: "Johnson",
+//   favoriteFood: "Eggs",
+//   hobbies: ["jumping out of planes", "personally holding the  San Andreas fault together", "building muscle mass"]
+// }
+
+// function printHobbies(){
+// // YOUR CODE GOES HERE
+// }
+// The printHobbies function should loop through the array of Dwayne The Rock Johnson's hobbies and print each one to the console.
+// Call the printHobbies function.
