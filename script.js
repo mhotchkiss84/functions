@@ -59,8 +59,32 @@ function divide(numberOne, numberTwo) {
 var divSum = divide(10, 2);
 console.log(divSum);
 // Call each function three times with different parameters.
-
-
 // Calculator Refactor
 // Refactor your previous exercise so that each calculator function returns the result of its calculations. You should not have any console.logs inside your functions.
 // When you execute your calculator functions, store each result in a new variable and log the variable to the console. The console.logs should now be outside the scope of your functions.
+
+
+
+// Greetings Pt. 2
+// Revisit the greetings exercise you did in the conditionals chapter, where you logged a greeting to the console based on the person's preferred language.
+// Write a function that accepts two parameters: name and language.
+// If the person's preferred language is English, the function should print "Hello, [name]!" to the console.
+// If the person's preferred language is Spanish print "Hola, [name]!" to the console.
+// If their preferred language is French, print "Bonjour, [name]!" to the console.
+function languageGreeting(name, language){
+    if(language === "english"){
+        console.log(`Hello, ${name}`);
+    } else if(language === "spanish"){
+        console.log(`Hola, ${name}`);
+    }
+}
+languageGreeting("Mike", "spanish");
+
+// Sandwich Maker
+// Write a function that accepts three parameters: breadType (a string), sandwichName, and isToasted (a boolean).
+// The function should check whether isToasted is true or false and build a sentence about the sandwich order accordingly.
+// The function should return the sentence.
+// Call the function three times, passing in three different sets of parameters.
+// Example console output:
+// "You ordered a toasted meatball sub sandwich on wheat."
+
