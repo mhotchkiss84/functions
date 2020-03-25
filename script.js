@@ -116,3 +116,44 @@ function printHobbies(){
 // Call the printHobbies function.
 printHobbies();
 
+
+// New Years Eve Party
+// Copy and paste the following array into your JavaScript file:
+var partyGuests = [
+  {
+    name: "Sam",
+    age: 18
+  },
+  {
+    name: "Jerry",
+    age: 45
+  },
+  {
+    name: "Lila",
+    age: 29
+  },
+  {
+    name: "Mary",
+    age: 68
+  },
+  {
+    name: "Todd",
+    age: 10
+  }
+]
+
+function ageChecker(){
+    var drinkingList = [];
+    for(i = 0; i != partyGuests.length; i++){
+        if(partyGuests[i].age >= 21){
+            drinkingList.push(partyGuests[i].name);
+        }
+    }
+    return drinkingList;
+}
+var testVar = ageChecker();
+console.log(testVar);
+// Fill in the ageChecker function so that it does the following things:
+// Loop through the partyGuests and check if each guest is at least 21.
+// Build a sentence or two about who can drink and who can't. (Example: " "Jery, Lila, and Mary can drink. Sam and Todd are too young.")
+// Log the sentnece to the console.
